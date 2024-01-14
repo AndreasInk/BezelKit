@@ -5,7 +5,9 @@
 //
 
 import Foundation
-
+#if os(iOS)
+import UIKit
+#endif
 /// `DeviceBezel` provides a mechanism to obtain the bezel radius of the current device.
 public class DeviceBezel {
 
