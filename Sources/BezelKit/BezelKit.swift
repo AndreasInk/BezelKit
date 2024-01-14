@@ -92,7 +92,7 @@ extension DeviceBezel {
 				return nil
 			}
 		}
-		#if os(macOS)
+		#if os(iOS)
 		let identifier = UIDevice.current.modelIdentifier
 		return cache[identifier]
 		#else 
