@@ -9,7 +9,7 @@ import PackageDescription
 
 let package = Package(
 	name: "BezelKit",
-	platforms: [.iOS(.v11), .macOS(.v14)],
+	platforms: [.iOS(.v11), .macOS(.v12)],
 	products: [
 		.library(name: "BezelKit", targets: ["BezelKit"])
 	],
