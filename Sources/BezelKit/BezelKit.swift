@@ -4,7 +4,7 @@
 // Website: https://markbattistella.com
 //
 
-import UIKit
+import Foundation
 
 /// `DeviceBezel` provides a mechanism to obtain the bezel radius of the current device.
 public class DeviceBezel {
@@ -92,8 +92,11 @@ extension DeviceBezel {
 				return nil
 			}
 		}
-
+		#if os(macOS)
 		let identifier = UIDevice.current.modelIdentifier
 		return cache[identifier]
+		#else 
+		return cache["macOS"]
+		#endif
 	}
 }

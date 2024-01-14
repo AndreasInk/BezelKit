@@ -4,6 +4,7 @@
 // Website: https://markbattistella.com
 //
 
+#if os(iOS)
 import UIKit
 
 internal extension UIDevice {
@@ -37,3 +38,4 @@ internal extension UIDevice {
 		#endif
 	}
 }
+#endif
